@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto International Film Festival</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <link rel="stylesheet" href="./css/festival_style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+</head>
+
+<body>
+
+    <div id="header-container">
+        <header>
+            <div class="header-container">
+                <nav class="left">
+                    <ul>
+                        <li><a href="./movie-home.html">HOME</a></li>
+                        <li><a href="./filmfestival.html">MOVIES</a></li>
+                        <li><a href="./buy-tickets-form.html">BUY TICKETS</a></li>
+                        <li><a href="#">SCHEDULE</a></li>
+                        <li><a href="#">ARTISTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <div class="logo"><a href="#">Cinemate</a></div>
+                </div>
+                <nav class="right">
+                    <div class="search-bar">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Search any movie">
+                            <button><span class="icon-srch"> <ion-icon name="search-outline"></ion-icon></span></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="background-image"></div>
+
+    <main class="head">
+        <h1>Toronto International Film Festival</h1>
+        <p>January 24 - 30, 2024</p>
+        <p>Toronto, Canada</p>
+    </main>
+
+    <div class="container">
+        <h2>Tickets & Passes</h2>
+        <p><span>Choose from a variety of passes and ticket options</span></p>
+        <div class="ticket-option">
+            <ion-icon name="ticket" class="movie-home-icons"></ion-icon>
+            <h2>One Day Ticket</h2>
+            <p class="price">$95</p>
+            <ul class="details">
+                <li>Access to all the movies for 1 day</li>
+                <li>10% off on all snacks and drinks</li>
+            </ul>
+            <button class="buy-btn" onclick="buyTickets()">Buy Tickets</button>
+        </div>
+
+        <div class="ticket-option">
+            <ion-icon id name="musical-notes" class="movie-home-icons"></ion-icon>
+            <h2>All Access Pass</h2>
+            <p class="price">$199</p>
+            <ul class="details">
+                <li>Unlimited access to all the movies</li>
+                <li>Valid for entry on all the festival days</li>
+                <li>Skip the line with fast entry</li>
+                <li>Exclusive meet and greet with the movie stars</li>
+                <li>20% off on all the snacks and drinks</li>
+            </ul>
+            <button class="buy-btn" onclick="buyTickets()">Buy Tickets</button>
+        </div>
+
+        <h3>Location of the Venue<h3>
+                <div id="map"></div>
+
+    </div>
+
+    <div id="footer-container">
+        <div class="footer">
+            <div class="social-icons row">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+
+            <div class="links row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Our Collection</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright row">
+                MADS Copyright © 2024 Cinemate - All rights reserved || Designed By: PARTH
+            </div>
+        </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./javascript/festival_script.js"></script>
+    <script type="text/javascript" src="./javascript/script.js"></script>
+</body>
+
+</html>

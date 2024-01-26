@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpapers.com/images/hd/interstellar-earth-top-dual-screen-fr626zcg47tpbuae.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.head {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: transparent;
+    background-image: linear-gradient(to right, #edfe31, #e52e71);
+    background-clip: text;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+p.span {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.ticket-option {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-home-icons {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #FF6347;
+    margin-right: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+ul.details {
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    list-style-type: square;
+}
+
+ul.details li {
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
